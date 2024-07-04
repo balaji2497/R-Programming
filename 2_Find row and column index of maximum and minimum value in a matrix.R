@@ -1,0 +1,12 @@
+#2.Find row and column index of maximum and minimum value in a matrix in R.
+mat <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3, byrow = TRUE)
+max_value <- max(mat)
+min_value <- min(mat)
+max_index <- which(mat == max_value, arr.ind = TRUE)
+min_index <- which(mat == min_value, arr.ind = TRUE)
+cat("Maximum value:", max_value, "\n")
+cat("Row index of maximum value:", max_index[, 1], "\n")
+cat("Column index of maximum value:", max_index[, 2], "\n")
+cat("\nMinimum value:", min_value, "\n")
+cat("Row index of minimum value:", min_index[, 1], "\n")
+cat("Column index of minimum value:", min_index[, 2], "\n")
